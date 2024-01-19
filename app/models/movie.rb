@@ -1,5 +1,5 @@
 class Movie < ApplicationRecord
-  has_many :bookmarks, -> { where active: true },dependent: :destroy
+  has_many :bookmarks, -> { where active: true }, dependent: :destroy
 
   validates :title, presence: true
   validates :overview, presence: true
